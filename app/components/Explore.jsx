@@ -1,6 +1,4 @@
-import { Link } from "@remix-run/react";
-
-export function Explore() {
+export default function Explore() {
   return (
     <div className="all-cases-link">
       <a

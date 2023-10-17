@@ -1,15 +1,12 @@
-import { ClientsContentBlock } from "../components/ClientsContentBlock";
-import { Explore } from "../components/Explore";
-import { Footer } from "../components/Footer";
-import { HeaderTitleSubtitle } from "../components/HeaderTitleSubtitle";
-import { IconContentBlock } from "../components/IconContentBlock";
-import { IntroImage } from "../components/IntroImage";
-import { IntroSection } from "../components/IntroSection";
-import { PageTransition } from "../components/PageTransition";
-import { Preloader } from "../components/Preloader";
-import { Sidebar } from "../components/Sidebar";
-import { SiteNavigation } from "../components/SiteNavigation";
-import { SocialMedia } from "../components/SocialMedia";
+import Explore from "@/app/components/Explore";
+import ClientsContentBlock from "@/app/components/ClientsContentBlock";
+import Footer from "@/app/components/Footer";
+import HeaderTitleSubtitle from "@/app/components/HeaderTitleSubtitle";
+import PageTransition from "@/app/components/PageTransition";
+import Preloader from "@/app/components/Preloader";
+import Sidebar from "@/app/components/Sidebar";
+import SiteNavigation from "@/app/components/SiteNavigation";
+import SocialMedia from "@/app/components/SocialMedia";
 
 export default function Contact() {
   return (
@@ -79,7 +76,7 @@ export default function Contact() {
                     width="1000"
                     height="450"
                     style={{ border: "0" }}
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>

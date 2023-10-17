@@ -1,14 +1,33 @@
-export function IconContentBlock() {
+import { useContext } from "react";
+import FramerContext from "../_context/FramerContext";
+
+export default function IconContentBlock() {
+  const motion = useContext(FramerContext);
   return (
     <section className="icon-content-block services-block">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-12 wow" data-splitting={true}>
-            <h3 className="section-title">
+            <motion.h3
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={{
+                hidden: { scale: 0.5, opacity: 0 },
+                visible: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    delay: 0.2,
+                  },
+                },
+              }}
+              className="section-title"
+            >
               THE THINGS
               <br />
               WE ARE ABLE TO DO
-            </h3>
+            </motion.h3>
           </div>
           <div className="col-lg-4 col-md-3 wow" data-splitting={true}>
             <div className="content-block">

@@ -1,4 +1,4 @@
-export function ClientsContentBlock() {
+export default function ClientsContentBlock() {
   return (
     <section className="clients">
       <div className="container">

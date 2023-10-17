@@ -1,6 +1,6 @@
-import { Link } from "@remix-run/react";
+import { motion } from "framer-motion";
 
-export function Header() {
+export default function Header() {
   return (
     <header className="video-hero">
       <div className="video-bg">
@@ -11,7 +11,25 @@ export function Header() {
           loop={true}
         ></video>
       </div>
-      <div className="inner">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 1,
+            },
+          },
+        }}
+        className="inner"
+      >
         <span>WhiteCity Studios</span>
         <span></span>
         <a
@@ -23,7 +41,7 @@ export function Header() {
         >
           BOOK A SESSION NOW&nbsp;&nbsp;<i className="fa fa-angle-right"></i>
         </a>
-      </div>
+      </motion.div>
     </header>
   );
 }

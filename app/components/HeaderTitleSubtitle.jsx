@@ -1,4 +1,4 @@
-export function HeaderTitleSubtitle({ title, subtitle }) {
+export default function HeaderTitleSubtitle({ title, subtitle }) {
   return (
     <header className="page-header">
       <div className="video-bg">

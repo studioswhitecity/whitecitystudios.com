@@ -1,4 +1,4 @@
-export function SocialMedia() {
+export default function SocialMedia() {
   return (
     <div className="social-media">
       <div className="layer"></div>

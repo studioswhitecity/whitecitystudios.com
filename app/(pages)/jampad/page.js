@@ -1,15 +1,11 @@
-import { BrandName, Explore } from "../components/Explore";
-import { ClientsContentBlock } from "../components/ClientsContentBlock";
-import { Footer } from "../components/Footer";
-import { HeaderTitleSubtitle } from "../components/HeaderTitleSubtitle";
-import { IconContentBlock } from "../components/IconContentBlock";
-import { IntroImage } from "../components/IntroImage";
-import { IntroSection } from "../components/IntroSection";
-import { PageTransition } from "../components/PageTransition";
-import { Preloader } from "../components/Preloader";
-import { Sidebar } from "../components/Sidebar";
-import { SiteNavigation } from "../components/SiteNavigation";
-import { SocialMedia } from "../components/SocialMedia";
+import Explore from "@/app/components/Explore";
+import Footer from "@/app/components/Footer";
+import HeaderTitleSubtitle from "@/app/components/HeaderTitleSubtitle";
+import PageTransition from "@/app/components/PageTransition";
+import Preloader from "@/app/components/Preloader";
+import Sidebar from "@/app/components/Sidebar";
+import SiteNavigation from "@/app/components/SiteNavigation";
+import SocialMedia from "@/app/components/SocialMedia";
 
 export default function JamPad() {
   return (
@@ -63,33 +59,33 @@ export default function JamPad() {
               </div>
               <div className="col-lg-8 col-md-10 wow" data-splitting>
                 <h6>AMENITIES:</h6>
-                <p>
-                  <ul>
-                    <li>Fully soundproofed and acoustically treated.</li>
-                    <li>Fully air conditioned.</li>
-                    <li>Rooftop lounge area.</li>
-                  </ul>
-                </p>
+                {/* <p> */}
+                <ul>
+                  <li>Fully soundproofed and acoustically treated.</li>
+                  <li>Fully air conditioned.</li>
+                  <li>Rooftop lounge area.</li>
+                </ul>
+                {/* </p> */}
               </div>
               <div className="col-lg-8 col-md-10 wow" data-splitting>
                 <h6>EQUIPMENTS:</h6>
-                <p>
-                  <ul>
-                    <li>Mapex Acoustic Drum Kit (5 Pcs)</li>
-                    <li>Zildjian Planet Z Cymbals</li>
-                    <li>Boss Katana-50 MKII Guitar Amplifier</li>
-                    <li>Shure SM-57 & SM-58 Microphones</li>
-                  </ul>
-                </p>
+                {/* <p> */}
+                <ul>
+                  <li>Mapex Acoustic Drum Kit (5 Pcs)</li>
+                  <li>Zildjian Planet Z Cymbals</li>
+                  <li>Boss Katana-50 MKII Guitar Amplifier</li>
+                  <li>Shure SM-57 & SM-58 Microphones</li>
+                </ul>
+                {/* </p> */}
               </div>
               <div className="col-lg-8 col-md-10 wow" data-splitting>
                 <h6>PA SYSTEM:</h6>
-                <p>
-                  <ul>
-                    <li>Mackie Thump 215 15" 1400W Powered Loudspeakers</li>
-                    <li>Yamaha MG166CX Analog Mixer</li>
-                  </ul>
-                </p>
+                {/* <p> */}
+                <ul>
+                  <li>Mackie Thump 215 15" 1400W Powered Loudspeakers</li>
+                  <li>Yamaha MG166CX Analog Mixer</li>
+                </ul>
+                {/* </p> */}
               </div>
               <div className="col-md-5 wow" data-splitting>
                 <h6>DIMENSIONS</h6>
