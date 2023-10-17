@@ -3223,7 +3223,7 @@ only screen and (max-device-width: 767px) {
 .palace-image {
   width: 100%;
   height: 70%;
-  background: url('../images/white-palace.jpg') no-repeat center center/cover;
+  background: url('../images/skyline.jpg') no-repeat center center/cover;
   border-radius: 10px;
 }
 

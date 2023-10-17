@@ -1,4 +1,4 @@
-export function IntroImage() {
+export default function IntroImage() {
   return (
     <section className="intro-image">
       <div className="container">

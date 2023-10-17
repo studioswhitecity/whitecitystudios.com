@@ -1,4 +1,6 @@
-export function Sidebar() {
+"use client";
+
+export default function Sidebar() {
   return (
     <aside className="left-side">
       <div className="logo">

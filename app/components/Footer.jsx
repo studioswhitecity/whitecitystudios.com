@@ -1,6 +1,6 @@
-import { Link } from "@remix-run/react";
+import Link from "next/link";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
@@ -11,7 +11,7 @@ export function Footer() {
               Need further details or <br />
               wish to connect?
             </h2>
-            <Link to="/contact" className="link">
+            <Link href="/contact" className="link">
               Get in touch
             </Link>
             {/* <ul>
@@ -67,7 +67,7 @@ export function Footer() {
                 <span>
                   Made with{" "}
                   <i className="fas fa-heart" style={{ color: "#f00" }}></i> by
-                  ***
+                  Ciber.ai
                 </span>
               </a>
             </div>

@@ -1,7 +1,9 @@
-import { Link, useLocation } from "@remix-run/react";
+import Link from "next/link";
 
-export function SiteNavigation() {
-  let location = useLocation();
+export default function SiteNavigation() {
+  let location = {
+    pathname: "",
+  };
 
   return (
     <nav className="site-navigation">
@@ -20,7 +22,7 @@ export function SiteNavigation() {
             { to: "/contact", label: "CONTACT", desc: "Say Hello" },
           ].map(({ to, label, desc }) => (
             <li key={to}>
-              <Link to={to}>{label}</Link>
+              <Link href={to}>{label}</Link>
               {location.pathname === to && (
                 <i className="fas fa-crosshairs"></i>
               )}
